@@ -1,0 +1,116 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.example.flutter_input_plugin",
+    "module": "flutter_input_plugin_release",
+    "version": "1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.12"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-304a3721fcccbeb00b356a8cda3e6531978897bd"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_input_plugin_release-1.0.aar",
+          "url": "flutter_input_plugin_release-1.0.aar",
+          "size": 5125,
+          "sha512": "28e403c906e9614440eb3cbd6402b864630a881376de3ccfe4580797d30ab0598e62282a893492d2b7f5e968a9c6cbc99faa4e4b6ec86e61e69977537b2b7c9f",
+          "sha256": "dcb16e38822b84db9182222fe6529ca357cc0aa9fcb8e6e3b9114bfb154a73c1",
+          "sha1": "f8c17f912caf23303256420e7322a78a1d4cc6d7",
+          "md5": "8a26fb19fb3ab011acaee6a4e3921c03"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "io.flutter",
+          "module": "flutter_embedding_release",
+          "version": {
+            "requires": "1.0.0-304a3721fcccbeb00b356a8cda3e6531978897bd"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "flutter_input_plugin_release-1.0.aar",
+          "url": "flutter_input_plugin_release-1.0.aar",
+          "size": 5125,
+          "sha512": "28e403c906e9614440eb3cbd6402b864630a881376de3ccfe4580797d30ab0598e62282a893492d2b7f5e968a9c6cbc99faa4e4b6ec86e61e69977537b2b7c9f",
+          "sha256": "dcb16e38822b84db9182222fe6529ca357cc0aa9fcb8e6e3b9114bfb154a73c1",
+          "sha1": "f8c17f912caf23303256420e7322a78a1d4cc6d7",
+          "md5": "8a26fb19fb3ab011acaee6a4e3921c03"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "flutter_input_plugin_release-1.0-sources.jar",
+          "url": "flutter_input_plugin_release-1.0-sources.jar",
+          "size": 2599,
+          "sha512": "5770869b337b6a16d5896b9fdd45edb878da238267eb44ef5dd047dc2d1fb6f657a40db5c131c9c5e06da5b25829a4a0d0dd352d3d4fcfb64ef710b76ce03ee8",
+          "sha256": "2b3945b2e2364f31e1fb242b6961a18d4e783ae37cbc9a0653686633b6e344c7",
+          "sha1": "45887b67f09f8ee0074311846d73b15dcbff3721",
+          "md5": "b686b6ff67cb161b4cca5ad1a142c331"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseJavaDocPublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "javadoc",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "flutter_input_plugin_release-1.0-javadoc.jar",
+          "url": "flutter_input_plugin_release-1.0-javadoc.jar",
+          "size": 308680,
+          "sha512": "4e8c4c8549941aaa4f202cb131d323f4034a115881a2da5dd086c54af2ebbbcb4955b1f81dd031aee9ae71dd54c98ed704c9602976eec7f8a005a4b09bb3cd06",
+          "sha256": "08d25812d2b4d72c2495c264b52d5de8c1f27c7f8513be941955524b798fec10",
+          "sha1": "b9eab28f7bd5bf657f74a0a27c1b0c3139dbc7ac",
+          "md5": "f8a73a68b2347ff512be7b81ca4e95cd"
+        }
+      ]
+    }
+  ]
+}
