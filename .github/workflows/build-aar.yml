@@ -1,0 +1,35 @@
+name: Build Flutter AAR
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  build-aar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: 'stable'
+
+      - name: Install dependencies
+        run: flutter pub get
+
+      - name: Build Flutter AAR
+        run: flutter build aar --no-debug --no-profile
+
+      - name: Commit and push AAR artifacts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add build/host/outputs/repo
+          git commit -m "chore: update Flutter AAR [skip ci]" || echo "No changes to commit"
+          git push
+

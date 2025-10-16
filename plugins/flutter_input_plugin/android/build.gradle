@@ -1,0 +1,41 @@
+group = "com.example.flutter_input_plugin"
+version = "1.0-SNAPSHOT"
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.1.0")
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+apply plugin: "com.android.library"
+
+android {
+    namespace = "com.example.flutter_input_plugin"
+
+    compileSdk = 34
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main.java.srcDirs += "src/main/java"
+    }
+
+    defaultConfig {
+        minSdk = 21
+    }
+}
