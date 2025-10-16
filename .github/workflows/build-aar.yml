@@ -26,10 +26,12 @@ jobs:
         run: flutter build aar --no-debug --no-profile
 
       - name: Commit and push AAR artifacts
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -f build/host/outputs/repo
-          git commit -m "chore: update Flutter AAR [skip ci]" || echo "No changes to commit"
-          git push
+          git diff-index --quiet HEAD || git commit -m "chore: update release AAR [skip ci]"
+          git push https://$GH_PAT@github.com/${{ github.repository }} HEAD:main
 
